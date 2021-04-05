@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 4,
+    "passes": 1,
+    "pending": 0,
+    "failures": 3,
+    "start": "2021-04-05T18:28:40.729Z",
+    "end": "2021-04-05T18:28:41.487Z",
+    "duration": 758
+  },
+  "tests": [
+    {
+      "title": "sets a variable driver equal to bob",
+      "fullTitle": "index.js driver sets a variable driver equal to bob",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected 'bobb' to equal 'bob'",
+        "showDiff": true,
+        "actual": "bobb",
+        "expected": "bob",
+        "stack": "AssertionError: expected 'bobb' to equal 'bob'\n    at Context.<anonymous> (test/indexTest.js:12:25)\n    at processImmediate (node:internal/timers:464:21)"
+      }
+    },
+    {
+      "title": "invokes console.log() with the string \"this code was called\"",
+      "fullTitle": "index.js console.log() invokes console.log() with the string \"this code was called\"",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "invokes console.log() with the `driver` variable",
+      "fullTitle": "index.js console.log() invokes console.log() with the `driver` variable",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected false to be true",
+        "showDiff": true,
+        "actual": "false",
+        "expected": "true",
+        "stack": "AssertionError: expected false to be true\n    at Context.<anonymous> (test/indexTest.js:32:57)\n    at processImmediate (node:internal/timers:464:21)"
+      }
+    },
+    {
+      "title": "invokes the console.log with the `driver` variable as the first argument and `is the driver variable name` as the second argument",
+      "fullTitle": "index.js console.log() invokes the console.log with the `driver` variable as the first argument and `is the driver variable name` as the second argument",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected false to be true",
+        "showDiff": true,
+        "actual": "false",
+        "expected": "true",
+        "stack": "AssertionError: expected false to be true\n    at Context.<anonymous> (test/indexTest.js:37:88)\n    at processImmediate (node:internal/timers:464:21)"
+      }
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "sets a variable driver equal to bob",
+      "fullTitle": "index.js driver sets a variable driver equal to bob",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected 'bobb' to equal 'bob'",
+        "showDiff": true,
+        "actual": "bobb",
+        "expected": "bob",
+        "stack": "AssertionError: expected 'bobb' to equal 'bob'\n    at Context.<anonymous> (test/indexTest.js:12:25)\n    at processImmediate (node:internal/timers:464:21)"
+      }
+    },
+    {
+      "title": "invokes console.log() with the `driver` variable",
+      "fullTitle": "index.js console.log() invokes console.log() with the `driver` variable",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected false to be true",
+        "showDiff": true,
+        "actual": "false",
+        "expected": "true",
+        "stack": "AssertionError: expected false to be true\n    at Context.<anonymous> (test/indexTest.js:32:57)\n    at processImmediate (node:internal/timers:464:21)"
+      }
+    },
+    {
+      "title": "invokes the console.log with the `driver` variable as the first argument and `is the driver variable name` as the second argument",
+      "fullTitle": "index.js console.log() invokes the console.log with the `driver` variable as the first argument and `is the driver variable name` as the second argument",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected false to be true",
+        "showDiff": true,
+        "actual": "false",
+        "expected": "true",
+        "stack": "AssertionError: expected false to be true\n    at Context.<anonymous> (test/indexTest.js:37:88)\n    at processImmediate (node:internal/timers:464:21)"
+      }
+    }
+  ],
+  "passes": [
+    {
+      "title": "invokes console.log() with the string \"this code was called\"",
+      "fullTitle": "index.js console.log() invokes console.log() with the string \"this code was called\"",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}

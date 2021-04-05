@@ -1,4 +1,10 @@
-const expect = chai.expect;
+// var chai = require('chai');
+// var sinon = require('sinon');
+// const expect = chai.expect;
+
+const { log } = require("..");
+
+// chai.use(sinonChai);
 
 describe('index.js', function () {
   describe('driver', function () {
@@ -8,22 +14,27 @@ describe('index.js', function () {
   });
 
   describe('console.log()', function () {
-    const spy = sinon.spy(console, 'log');
+    beforeEach(function() {
+      spy(console, 'log');
+    })
 
-    after(function () {
-      spy.restore();
-    });
+    afterEach(function() {
+      console.log.restore();
+    })
 
     it('invokes console.log() with the string "this code was called"', function () {
-      expect(spy.calledWithExactly('this code was called')).to.be.true;
+      log();
+      expect(console.log.calledWithExactly('this code was called')).to.be.true;
     });
 
     it('invokes console.log() with the `driver` variable', function () {
-      expect(spy.calledWithExactly('bob')).to.be.true;
+      log();
+      expect(console.log.calledWithExactly('bob')).to.be.true;
     });
 
     it('invokes the console.log with the `driver` variable as the first argument and `is the driver variable name` as the second argument', function () {
-      expect(spy.calledWithExactly('bob', 'is the driver variable name')).to.be.true;
+      log();
+      expect(console.log.calledWithExactly('bob', 'is the driver variable name')).to.be.true;
     });
   });
 });
