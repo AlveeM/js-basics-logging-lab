@@ -1,10 +1,10 @@
-// var chai = require('chai');
-// var sinon = require('sinon');
-// const expect = chai.expect;
+const chai = require('chai');
+const sinon = require('sinon');
+const spy = sinon.spy;
+const expect = chai.expect;
 
-const { log } = require("..");
+const { driver, log } = require("../index");
 
-// chai.use(sinonChai);
 
 describe('index.js', function () {
   describe('driver', function () {

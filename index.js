@@ -9,5 +9,6 @@ function log() {
 }
 
 module.exports = {
+  driver,
   log
 }
